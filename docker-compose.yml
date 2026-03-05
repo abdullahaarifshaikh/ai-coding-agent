@@ -1,0 +1,9 @@
+services:
+  fastapi-app:
+    build: .
+    container_name: ai-coding-agent
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: always
